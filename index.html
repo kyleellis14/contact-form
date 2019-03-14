@@ -10,37 +10,37 @@
 </head>
 <body>
 
-  <section>
-    <div>
-      <h1> Send us a sweet little note </h1>
+  <section class="contact pad-t-2 pad-b-2">
+    <div class="max-length">
+      <h1>Send us a sweet little note</h1>
 
-      <form>
+      <form class="push-0" method="POST" action="https://formspree.io/desm0044@algonquinlive.com">
+        <div class="push">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+        </div>
+        <div class="push">
+          <label for="email">Your email</label>
+          <input id="email" type="email" placeholder="me@me.com" name="email" required>
+        </div>
+        <div class="push">
+          <label for="subject">Subject</label>
+          <select id="subject" name="_subject">
+            <option>Get a quote!</option>
+            <option>General question</option>
+            <option>Just to talk</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="details">What's up?</label>
+          <textarea id="details" name="message" required></textarea>
+        </div>
         <div>
-          <label for="name">Name</Label>
-            <input id="name" required>
-          </div>
-          <div>
-            <Label for="email">Email</label>
-            <input id="email" type "email" placeholder="me@me.com" required>
-          </div>
-          <div
-            <label for="subject">Subject</Label>
-            <select id="Subject">
-              <option>Get a quote!</option>
-              <option>General Question</option>
-              <option>Just to talk</option>
-            </select>
-          </div>
-          <div>
-            <label for="details">What's up?</label>
-              <textarea id="details" required></tectarea>
-          </div>
-          <div>
-            <button type="submit">Send message</button>
-          </div>
-        </form>
-      </div>
-    </selection>
+          <button class="btn btn-light mega" type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
-  </body>
-  </html>
+</body>
+</html>
